@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Nabigazioa -->
+    <nav class="navbar fixed-top">
+        <a href="#section1" onclick="scrollToSection('section1')">Home</a>
+        <a href="#section2" onclick="scrollToSection('section2')">About Me</a>
+        <a href="#section3" onclick="scrollToSection('section3')">Projects</a>
+        <a href="#section4" onclick="scrollToSection('section4')">Contact</a>
+    </nav>
+
+    <!-- 1. Atala: Home -->
+    <div id="section1" class="section">
+        <div class="content">
+            <p id="text1">I AM</p>
+            <h1 class="name">SEAN ALBERDI</h1>
+            <p id="text2">WEB DEVELOPER</p>
+        </div>
+        <div class="scroll-arrow down" onclick="scrollToSection('section2')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+
+    <!-- 2. Atala: About Me -->
+    <div id="section2" class="section">
+        <div class="about-me-container">
+            <!-- Skills atala -->
+            <div class="about-skills">
+                <h2>Skills</h2>
+
+                <div class="skill-item skill-html">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item skill-css">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item skill-js">
+                    <div class="skill-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item skill-php">
+                    <div class="skill-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <div class="skill-name">PHP</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-item skill-react">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="skill-name">React</div>
+                    <div class="skill-bar-container">
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="about-me-container">
+                <div class="about-experience">
+                    <h2>Experience</h2>
+                    <ul>
+                        <li><b>2024:</b> Web Developer at [Company Name]</li>
+                        <li><b>2023:</b> Frontend Development Intern at [Company Name]</li>
+                        <li><b>2022:</b> Volunteer at [Project Name]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Nabigazioaren geziak -->
+            <div class="scroll-arrow up" onclick="scrollToSection('section1')">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+            <div class="scroll-arrow down" onclick="scrollToSection('section3')">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Atala: Projects -->
+    <div id="section3" class="section">
+        <div class="projects-grid">
+            <!-- Proiektu 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/todo.webp" alt="TODO Web">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">TODO Web</h3>
+                    <p class="project-description">
+                        TODO is a task management app that helps users organize their daily activities with an
+                        easy-to-use interface.
+                    </p>
+                </div>
+            </div>
+            <!-- Proiektu 2 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/reward.webp" alt="Sarbucks Reward">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Sarbucks Reward</h3>
+                    <p class="project-description">
+                        A loyalty program that allows users to earn points on every purchase and unlock exclusive
+                        rewards.
+                    </p>
+                </div>
+            </div>
+            <!-- Proiektu 3 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/erronka2.png" alt="Project 3">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Custom Portfolio</h3>
+                    <p class="project-description">
+                        A fully custom portfolio template designed to showcase unique designs and capabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-arrow up" onclick="scrollToSection('section2')">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <div class="scroll-arrow down" onclick="scrollToSection('section4')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </div>
+
+    <!-- 4. Atala: Contact -->
+    <div id="section4" class="section">
+        <div class="content contact-container">
+            <div class="contact-info">
+                <h2>CONTACT</h2>
+                <p id="p2">Feel free to reach out for any inquiries or feedback! I’m always open to connecting and
+                    having meaningful discussions. Whether you have a question about a project, need advice, or want to
+                    share some insights, don’t hesitate to get in touch. I believe in the power of collaboration and am
+                    always excited to connect with like-minded individuals who are passionate about creating innovative
+                    solutions.
+
+                    You can contact me via email for any detailed conversations or follow me on social media for more
+                    updates and ideas. I’m constantly exploring new opportunities and love exchanging thoughts with
+                    people who share a similar vision. Let’s connect, collaborate, and bring our ideas to life –
+                    together we can make something truly great!</p>
+                <br>
+                <ul>
+                    <li><strong>Phone:</strong> +34 123 45 67 89</li>
+                    <li><strong>Email:</strong> sean.alberdi@webcrafts.com</li>
+                    <li><strong>Address:</strong> C/Example, Bilbao, Spain</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h2>CONTACT FORM</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+        <div class="scroll-arrow up" onclick="scrollToSection('section3')">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

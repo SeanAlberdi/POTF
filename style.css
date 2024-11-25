@@ -1,0 +1,406 @@
+/* Estilo Orokorrak */
+/* Erradialeko atzeko planoa */
+body {
+  background: radial-gradient(
+    circle at 50% 30%,
+    rgba(61, 63, 66, 1) 0%,
+    rgba(57, 58, 62, 1) 15%,
+    rgba(24, 25, 30, 1) 75%
+  );
+  color: #dddddd;
+  font-family: "Arial", sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  /* Scroll barra ezkutatu */
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+}
+
+/* Atal estiloak */
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  scroll-snap-align: start;
+}
+
+/* Nabigazioa */
+.navbar {
+  justify-content: flex-end;
+  padding-top: 30px;
+  position: fixed;
+  top: 0;
+  right: 10;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+}
+
+.navbar a {
+  color: #dddddd;
+  margin-left: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+/* Scroll geziak */
+.scroll-arrow {
+  position: absolute;
+  font-size: 32px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.scroll-arrow.up {
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-arrow.down {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Hasiera atala */
+.content h1 {
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.content p {
+  font-size: 32px;
+  color: #aaa;
+}
+
+.name {
+  font-family: "Electronica Display Solid", "sans-serif";
+}
+
+#text1 {
+  text-align: left;
+}
+
+#text2 {
+  text-align: right;
+}
+
+/* Nire burua atal */
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+  gap: 40px;
+}
+
+.about-skills,
+.about-experience {
+  flex: 1;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-skills h2,
+.about-experience h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about-skills ul,
+.about-experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-skills ul li,
+.about-experience ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-experience ul li b {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Proiektuak atal */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 80%;
+  margin: auto;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-details {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #c7c7c7;
+  line-height: 1.6;
+}
+
+/* Kontaktatzeko atal */
+.contact-container {
+  display: flex;
+  justify-content: center; /* Edukia zentratzen du */
+  gap: 30px;
+  max-width: 80%;
+  margin: auto;
+  padding: 40px;
+}
+
+.contact-info,
+.contact-form {
+  flex: 1;
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-info h2,
+.contact-form h2 {
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #c7c7c7;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  background: #1c1c1c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.contact-form button {
+  padding: 15px;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #e5e5e5;
+}
+
+#p2 {
+  font-size: medium;
+}
+
+/* Ahozkotasunetan hainbat hizkuntza erabiltzeko */
+.about-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Elementuaren arteko tartea jaitsita */
+  background-color: #111111;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  width: 60%; /* Zabalera jaitsita */
+  margin: auto; /* Edukia zentratzen du */
+}
+
+.about-skills h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.skill-item {
+  flex: 1 1 200px; /* Laukizuzenaren zabalera jaitsita */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ikonon eta izenaren arteko tartea jaitsita */
+  margin-bottom: 20px;
+}
+
+.skill-icon {
+  font-size: 30px; /* Ikonon tamaina jaitsita */
+  color: #bb86fc;
+}
+
+.skill-name {
+  font-size: 16px; /* Testuaren tamaina jaitsita */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.skill-bar-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Barra eta elementuen arteko tartea egokitu */
+  justify-content: flex-end;
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #444444;
+  border-radius: 5px;
+  height: 8px; /* Barra altuera jaitsita */
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.skill-html .skill-progress {
+  width: 90%;
+  background-color: #f16529;
+}
+
+.skill-css .skill-progress {
+  width: 85%;
+  background-color: #2965f1;
+}
+
+.skill-js .skill-progress {
+  width: 80%;
+  background-color: #f7df1e;
+}
+
+.skill-php .skill-progress {
+  width: 75%;
+  background-color: #4f5d95;
+}
+
+.skill-react .skill-progress {
+  width: 70%;
+  background-color: #61dafb;
+}
+
+/* Ordeka egokitzeko estiloak */
+.about-me-container {
+  display: flex;
+  flex-direction: column; /* Elementuak bertikalean biltzea */
+  gap: 40px;
+  width: 60%; /* Bi ataletan berdina izango da zabalera */
+  margin: auto;
+}
+
+/* Habilidades eta esperientzia ataletan estiloak */
+.about-skills,
+.about-experience {
+  flex: 1;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Erabilera Atal guztietan estiloak */
+.project-details p {
+  color: #c7c7c7;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.about-experience {
+  width: 70%; /* Ajusta el ancho a lo que desees */
+  margin: 0 auto; /* Centra el contenedor */
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espaciado alrededor */
+}
+
+.about-experience h2 {
+  font-size: 2rem;
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.about-experience ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-experience li {
+  font-size: 1.2rem;
+  margin-bottom: 10px; /* Espacio entre cada elemento */
+}
